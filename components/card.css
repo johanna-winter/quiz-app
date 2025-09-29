@@ -26,18 +26,8 @@
   margin-top: 15px;
 }
 
-.question-card__answer {
-  display: inline;
-  position: absolute;
-  bottom: 55%;
-  left: 43%;
-}
-
 .question-card__button {
   margin-top: 15px;
-}
-
-.question-card__button--show {
   list-style: none;
   display: inline-block;
   cursor: pointer;
@@ -50,7 +40,7 @@
   margin-bottom: 15px;
 }
 
-.question-card__button--show:hover {
+.question-card__button:hover {
   background-color: #f7f1d6;
   color: #8b0000;
   font-weight: bold;
