@@ -1,0 +1,26 @@
+.footer__navbar {
+  background-color: #8b0000;
+  color: #f7f1d6;
+  border: #c21514;
+  position: fixed;
+  height: 80px;
+  width: 100%;
+  bottom: 0;
+  z-index: 1000;
+}
+
+.footer__navbar--list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+.footer__navbar--highlighted {
+  background-color: #f7f1d6;
+  stroke: #8b0000;
+  fill: #8b0000;
+  padding: 15px 60px;
+}
