@@ -2,3 +2,37 @@
 @import "./components/header.css";
 @import "./components/card.css";
 @import "./components/navigation.css";
+@import "./components/button.css";
+
+.main__content {
+  padding: 20px 20px;
+  margin-top: 30px;
+}
+
+.profile {
+  display: grid;
+  grid-template-areas: "photo name" "text1 text1" "text2 text2";
+  margin-top: 30px;
+}
+
+.profile__image {
+  grid-area: photo;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.profile__title {
+  grid-area: name;
+}
+
+.profile__subtitle {
+  grid-area: text1;
+}
+
+.profile__text {
+  grid-area: text2;
+  margin-top: 20px;
+}

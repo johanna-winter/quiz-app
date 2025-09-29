@@ -3,7 +3,6 @@
   color: #f7f1d6;
   border: #c21514;
   position: fixed;
-  height: 80px;
   width: 100%;
   bottom: 0;
   z-index: 1000;
@@ -13,8 +12,13 @@
   list-style: none;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
   height: 100%;
+  border-top: solid 2px #8b0000;
+}
+
+.footer__navbar--link {
+  width: 48px;
+  height: 48px;
 }
 
 .footer__navbar--link svg {
@@ -23,8 +27,18 @@
   stroke: #f7f1d6;
 }
 
-.footer__navbar--highlighted svg {
+.footer__navbar--highlighted {
   background-color: #f7f1d6;
+}
+
+.footer__navbar--highlighted svg {
   stroke: #8b0000;
   fill: none;
+}
+
+.footer__list-item {
+  width: 33.3%;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0 10px;
 }
