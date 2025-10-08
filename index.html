@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="./js/index.js" defer></script>
     <title>Decades of Sound - The Ultimate Music Quiz</title>
   </head>
   <body>
@@ -11,9 +12,10 @@
       <h1 class="header__title">Decades of Sound</h1>
     </header>
     <main class="main__content">
-      <section class="question-card">
+      <section class="question-card" data-js="question-card">
         <svg
           class="question-card__bookmark"
+          data-js="bookmark"
           xmlns="http://www.w3.org/2000/svg"
           width="30"
           height="30"
@@ -30,8 +32,15 @@
         <h2 class="question-card__title">
           What was Freddie Mercury‘s real name?
         </h2>
-        <p class="question-card__answer" hidden>Farrokh Bulsara</p>
-        <button class="question-card__button">Show Answer</button>
+        <p
+          class="question-card__answer question-card__answer--hidden"
+          data-js="answer"
+        >
+          Farrokh Bulsara
+        </p>
+        <button class="question-card__button" data-js="answer-button">
+          Show Answer
+        </button>
         <div class="question-card__categories">
           <span class="question-card__category">Pop</span>
           <span class="question-card__category">Rock</span>
