@@ -1,3 +1,13 @@
+:root {
+  --primary: #800020;
+  --secondary: #f2e7c8;
+  --tertiary: #e5d9c7;
+  --quaternary: #4a4a4a;
+  --quinary: #808000;
+  --black: #23261d;
+  --white: #fff;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -9,8 +19,8 @@ body {
     "Lucida Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 1.5;
-  color: #2d2d2d;
-  background-color: #f7f1d6;
+  color: var(--black);
+  background-color: var(--secondary);
   padding-top: 80px;
   padding-bottom: 80px;
 }

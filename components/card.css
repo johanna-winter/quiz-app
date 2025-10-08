@@ -1,7 +1,7 @@
 .question-card {
   position: relative;
-  background-color: #eed5b9;
-  border: solid 2px #8b0000;
+  background-color: var(--tertiary);
+  border: solid 2px var(--primary);
   border-radius: 10px;
   margin: 30px 80px;
   padding: 20px 30px;
@@ -12,12 +12,12 @@
   position: absolute;
   top: -12px;
   right: 20px;
-  stroke: #8b0000;
-  fill: #f7f1d6;
+  stroke: var(--primary);
+  fill: var(--secondary);
 }
 
 .question-card__bookmark--filled {
-  fill: #8b0000;
+  fill: var(--primary);
 }
 
 .question-card__title {
@@ -31,9 +31,9 @@
   list-style: none;
   display: inline-block;
   cursor: pointer;
-  background: #8b0000;
-  color: #f7f1d6;
-  border: solid 2px #8b0000;
+  background: var(--primary);
+  color: var(--secondary);
+  border: solid 2px var(--primary);
   border-radius: 10px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
   padding: 8px 20px;
@@ -41,10 +41,10 @@
 }
 
 .question-card__button:hover {
-  background-color: #f7f1d6;
-  color: #8b0000;
+  background-color: var(--secondary);
+  color: var(--primary);
   font-weight: bold;
-  border: solid 2px #8b0000;
+  border: solid 2px var(--primary);
 }
 
 .question-card__categories {
@@ -55,9 +55,9 @@
 }
 
 .question-card__category {
-  border: solid 1.5px #8b0000;
+  border: solid 1.5px var(--black);
   border-radius: 8px;
   padding: 2px 10px;
-  background-color: #f7f1d6;
-  color: #8b0000;
+  background-color: var(--quaternary);
+  color: var(--tertiary);
 }

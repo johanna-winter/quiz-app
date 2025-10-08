@@ -33,9 +33,9 @@
   justify-content: space-evenly;
   width: 70px;
   padding: 0.5rem;
-  color: #8b0000;
-  background-color: #eed5b9;
-  border: 1.5px solid #8b0000;
+  color: var(--tertiary);
+  background-color: var(--quaternary);
+  border: 1.5px solid var(--black);
   border-radius: 4px;
 }
 
@@ -62,9 +62,9 @@
 .profile__settings-darkmode-label:before {
   width: 80px;
   height: 40px;
-  background: #f7f1d6;
+  background: var(--tertiary);
   display: block;
-  border: 1px solid #8b0000;
+  border: 1px solid var(--primary);
   border-radius: 100px;
   position: absolute;
   content: "";
@@ -78,17 +78,18 @@
   right: 40px;
   width: 30px;
   height: 30px;
-  background: #8b0000;
+  background: var(--primary);
   border-radius: 90px;
   transition: right 0.3s;
 }
 
 .profile__settings-darkmode-input:checked
   + .profile__settings-darkmode-label:before {
-  background: #eed5b9;
+  background: var(--primary);
 }
 
 .profile__settings-darkmode-input:checked
   + .profile__settings-darkmode-label:after {
   right: 5px;
+  background: var(--tertiary);
 }
