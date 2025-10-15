@@ -1,7 +1,27 @@
 const form = document.querySelector('[data-js="question-form"]');
-const addQuestionText = document.querySelector('[data-js="question-text"]');
-const addAnswerText = document.querySelector('[data-js="answer-text"]');
 const submitButton = document.querySelector('[data-js="submit-button"]');
+
+// Question counter
+
+const questionCounter = document.querySelector('[data-js="question-counter"]');
+const addQuestionText = document.querySelector('[data-js="question-text"]');
+
+addQuestionText.addEventListener("input", (event) => {
+  const count = event.target.value.length;
+  const questionMaxLength = 150 - count;
+  questionCounter.textContent = `${questionMaxLength} characters left`;
+});
+
+// Answer counter
+
+const answerCounter = document.querySelector('[data-js="answer-counter"]');
+const addAnswerText = document.querySelector('[data-js="answer-text"]');
+
+addAnswerText.addEventListener("input", (event) => {
+  const count = event.target.value.length;
+  const answerMaxLength = 150 - count;
+  answerCounter.textContent = `${answerMaxLength} characters left`;
+});
 
 // Create div tag to store new cards in
 const cardContainer = document.createElement("div");

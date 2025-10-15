@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <script src="./js/form.js" defer></script>
-    <title>Decades of Sound - The Ultimate Music Quiz</title>
+    <title>The Ultimate Music Quiz</title>
   </head>
   <body>
     <header class="header">
-      <h1 class="header__title">Decades of Sound</h1>
+      <h1 class="header__title">Smells Like Quiz Spirit</h1>
     </header>
     <main class="main__content">
       <section class="add-question">
@@ -26,6 +26,9 @@
             maxlength="150"
             required
           ></textarea>
+          <p class="add-question__counter" data-js="question-counter">
+            <span> 150 characters left</span>
+          </p>
           <label class="add-question__titles" for="add-answer__input"
             >Your answer: </label
           ><textarea
@@ -38,6 +41,9 @@
             maxlength="150"
             required
           ></textarea>
+          <p class="add-question__counter" data-js="answer-counter">
+            <span>150 characters left</span>
+          </p>
           <label class="add-question__titles" for="add-tag">Tags: </label
           ><input
             aria-label="Add tags"

@@ -1,13 +1,13 @@
-// Answer button & bookmark toggle
-
 const answerButton = document.querySelector('[data-js="answer-button"]');
 const answerText = document.querySelector('[data-js="answer"]');
-const bookmarkIcon = document.querySelector('[data-js="bookmark"]');
+const bookmarkButton = document.querySelector('[data-js="bookmark"]');
 
-bookmarkIcon.addEventListener("click", () => {
-  bookmarkIcon.classList.toggle("question-card__bookmark--filled");
+// Bookmark icon toggle
+bookmarkButton.addEventListener("click", () => {
+  bookmarkButton.classList.toggle("question-card__bookmark--filled");
 });
 
+// Show/Hide answer button toggle
 answerButton.addEventListener("click", () => {
   answerText.classList.toggle("question-card__answer--hidden");
   answerText.classList.toggle("question-card__answer--active");
