@@ -4,82 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="./js/index.js" defer></script>
     <title>Decades of Sound - The Ultimate Music Quiz</title>
   </head>
   <body>
     <header class="header">
       <h1 class="header__title">Decades of Sound</h1>
     </header>
-    <main class="profile">
-      <div class="profile__card">
-        <img
-          src="https://avatars.githubusercontent.com/u/232087644?v=4"
-          alt="Profile Photo Johanna"
-          class="profile__card-image"
-          height="200"
-          width="200"
-        />
-        <h2 class="profile__card-title">Johanna Winter</h2>
-      </div>
-      <h3>About Me</h3>
-      <p>
-        Hello fellow music lovers! I hope you're enjoying this ultimate music
-        quiz. My favourite era is definitely 80s metal, 2000s rock & I love all
-        rock-, blues- and country-related music questions! Have fun quizzing!
-      </p>
-      <ul class="badge-list">
-        <li class="badge-list__item">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-badge-question-mark-icon lucide-badge-question-mark"
-          >
-            <path
-              d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"
-            />
-            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
-            <line x1="12" x2="12.01" y1="17" y2="17" />
-          </svg>
-          <span>12</span>
-        </li>
-        <li class="badge-list__item">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-bookmark-icon lucide-bookmark"
-          >
-            <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z" />
-          </svg>
-          <span>4</span>
-        </li>
-      </ul>
-      <h2 id="title">Settings</h2>
-      <form class="profile__settings" aria-labelledby="title">
-        <input
-          type="checkbox"
-          id="switch-darkmode"
-          class="profile__settings-darkmode-input"
-          data-js="darkmode-input"
-        />
-        <label for="switch-darkmode" class="profile__settings-darkmode-label"
-          >Darkmode</label
-        >
-      </form>
-    </main>
     <footer class="footer__content">
       <nav class="footer__navbar">
         <ul class="footer__navbar--list">
@@ -125,7 +56,10 @@
               </svg>
             </li>
           </a>
-          <a href="form.html" class="footer__list-item footer__navbar--default">
+          <a
+            href="form.html"
+            class="footer__list-item footer__navbar--highlighted"
+          >
             <li class="footer__navbar--link">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -147,7 +81,7 @@
           </a>
           <a
             href="profile.html"
-            class="footer__list-item footer__navbar--highlighted"
+            class="footer__list-item footer__navbar--default"
           >
             <li class="footer__navbar--link">
               <svg

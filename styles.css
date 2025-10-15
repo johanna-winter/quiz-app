@@ -4,6 +4,7 @@
 @import "./components/navigation.css";
 @import "./components/button.css";
 @import "./components/profile.css";
+@import "./components/form.css";
 
 .main__content {
   padding: 20px 20px;
