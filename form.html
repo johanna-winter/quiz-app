@@ -4,13 +4,61 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <script src="./js/index.js" defer></script>
+    <script src="./js/form.js" defer></script>
     <title>Decades of Sound - The Ultimate Music Quiz</title>
   </head>
   <body>
     <header class="header">
       <h1 class="header__title">Decades of Sound</h1>
     </header>
+    <main class="main__content">
+      <section class="add-question">
+        <form class="add-question__form" data-js="question-form">
+          <label class="add-question__titles" for="add-question__input"
+            >Your question: </label
+          ><textarea
+            class="add-question__input"
+            aria-label="Add a question"
+            placeholder="Add your question here"
+            id="add-question__input"
+            name="question"
+            data-js="question-text"
+            maxlength="150"
+            required
+          ></textarea>
+          <label class="add-question__titles" for="add-answer__input"
+            >Your answer: </label
+          ><textarea
+            class="add-answer__input"
+            aria-label="Add an answer"
+            placeholder="Add your answer"
+            id="add-answer__input"
+            data-js="answer-text"
+            name="answer"
+            maxlength="150"
+            required
+          ></textarea>
+          <label class="add-question__titles" for="add-tag">Tags: </label
+          ><input
+            aria-label="Add tags"
+            placeholder="Add your tags"
+            type="text"
+            name="tag"
+            class="add-question__taginput"
+            id="add-tag"
+          />
+          <button
+            type="submit"
+            class="add-question__submit"
+            data-js="submit-button"
+            name="submit"
+          >
+            Submit
+          </button>
+        </form>
+      </section>
+      <section class=""></section>
+    </main>
     <footer class="footer__content">
       <nav class="footer__navbar">
         <ul class="footer__navbar--list">

@@ -1,3 +1,5 @@
+// Answer button & bookmark toggle
+
 const answerButton = document.querySelector('[data-js="answer-button"]');
 const answerText = document.querySelector('[data-js="answer"]');
 const bookmarkIcon = document.querySelector('[data-js="bookmark"]');

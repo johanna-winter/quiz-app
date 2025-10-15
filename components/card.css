@@ -47,6 +47,7 @@
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
   padding: 8px 20px;
   margin-bottom: 15px;
+  transition: background-color 0.3s ease;
 }
 
 .question-card__button:hover {
